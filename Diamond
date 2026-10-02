@@ -1,0 +1,45 @@
+// Online C compiler (editor)
+// Write and run C online using this editor.
+
+#include <stdio.h>
+
+int main() {
+    //===UPPER HALF (3 ROWS)===
+    int row = 1;
+    while(row <= 3) {
+        //print spaces
+        int space = 1;
+        while(space <= 3 - row) {
+            printf(" ");
+            space++;
+        }
+        //print stars
+        int star = 1;
+        while(star <= 2 * row - 1) {
+            printf("*");
+            star++;
+        }
+        printf("\n");
+        row++;
+    }
+    //===LOWER HALF (2 ROWS)===
+    row = 2;
+    while(row >= 1) {
+        //print spaces
+        int space = 1;
+        while(space <= 3 - row) {
+            printf(" ");
+        space++;
+        
+    }
+    //print stars
+    int star = 1;
+    while(star <= 2 * row - 1) {
+        printf("*");
+        star++;
+    }
+    printf("\n");
+    row--;
+}
+    return 0;
+}
