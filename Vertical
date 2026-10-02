@@ -1,0 +1,15 @@
+// Online C compiler (editor)
+// Write and run C online using this editor.
+
+#include <stdio.h>
+
+int main(){
+    //variables
+    int counter = 0;
+
+    while (counter < 5){
+        printf("*\n");
+        counter++;
+    }
+    return 0;
+}
